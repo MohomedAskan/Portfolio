@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <rect width="800" height="500" fill="#090a0f"/>
+  <circle cx="400" cy="220" r="100" fill="#ef4444" opacity="0.15"/>
+  <circle cx="400" cy="220" r="60" fill="#ef4444" opacity="0.3"/>
+  <circle cx="400" cy="220" r="30" fill="#ef4444"/>
+  <text x="400" y="380" font-family="sans-serif" font-weight="800" font-size="20" fill="#ffffff" text-anchor="middle">Emergency Response Platform</text>
+  <text x="400" y="410" font-family="monospace" font-size="14" fill="#f59e0b" text-anchor="middle">STATUS: COMING SOON</text>
+</svg>
