@@ -28,12 +28,12 @@ function ScrollToTop() {
 
 export function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Portfolio">
       <ScrollToTop />
-      
+
       {/* Universal Desktop Custom Cursor */}
       <CustomCursor />
-      
+
       {/* Scroll Progress Bar at Window Top */}
       <ScrollProgress />
 
