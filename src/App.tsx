@@ -28,7 +28,7 @@ function ScrollToTop() {
 
 export function App() {
   return (
-    <BrowserRouter basename="/Portfolio">
+    <Router>
       <ScrollToTop />
 
       {/* Universal Desktop Custom Cursor */}
@@ -57,7 +57,7 @@ export function App() {
 
         <Footer />
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
 
