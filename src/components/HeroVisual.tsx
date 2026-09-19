@@ -16,7 +16,7 @@ export function HeroVisual() {
         <div className="w-full h-full rounded-[2rem] overflow-hidden relative flex items-end justify-center bg-brand-500">
           {/* Askan's Portrait Photo */}
           <img
-            src="/assets/askan-profile.png"
+            src={`${import.meta.env.BASE_URL}assets/askan-profile.png`}
             alt="Mohomed Askan"
             className="w-full h-full object-cover object-top filter brightness-105 contrast-105 group-hover:scale-105 transition-transform duration-500 ease-out"
           />
