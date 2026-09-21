@@ -180,7 +180,7 @@ export const PROJECTS: Project[] = [
     status: 'completed',
     thumbnail: '/assets/projects/pickme/thumbnail.svg',
     heroImage: '/assets/projects/pickme/hero.svg',
-    
+    behanceUrl: 'https://www.behance.net/gallery/254062393/PickMe-App-Redesign-UX-Case-Study',
     caseStudy: {
       overview: 'A personal conceptual redesign project examining the core ride-hailing user flow. This project focuses on simplifying location selection, fare transparency, vehicle type comparison, and real-time ride tracking.',
       disclaimer: 'Conceptual UX/UI redesign — personal project. Created for portfolio evaluation. Not affiliated with or endorsed by PickMe. No access to internal company data was used; analysis is strictly based on personal usability observations and desk research.',
