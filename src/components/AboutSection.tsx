@@ -1,4 +1,4 @@
-import { GraduationCap, MapPin, Calendar, BookOpen, Download } from 'lucide-react';
+import { Download } from 'lucide-react';
 
 interface AboutSectionProps {
   onOpenResumeModal?: () => void;
@@ -56,56 +56,39 @@ export function AboutSection({ onOpenResumeModal: _onOpenResumeModal }: AboutSec
           </div>
 
           {/* Right Education Card */}
-          <div className="lg:col-span-5 space-y-6">
-            <div className="p-8 rounded-2xl bg-slate-50/70 dark:bg-slate-900/60 border border-slate-200/80 dark:border-slate-800 space-y-6">
-              <div className="flex items-center gap-3 pb-4 border-b border-slate-200 dark:border-slate-800">
-                <div className="p-3 rounded-xl bg-brand-500/10 text-brand-500">
-                  <GraduationCap className="w-6 h-6" />
-                </div>
-                <div>
-                  <span className="text-xs font-mono uppercase tracking-wider text-slate-400">
-                    EDUCATION
-                  </span>
-                  <h3 className="text-lg font-bold text-slate-900 dark:text-white">
-                    University Education
-                  </h3>
-                </div>
-              </div>
+          <div className="lg:col-span-5 lg:pt-4">
+            <article className="rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/30 p-6 sm:p-7">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-slate-400 dark:text-slate-500">
+                Education
+              </p>
 
-              <div className="space-y-3">
-                <h4 className="text-base font-bold text-slate-900 dark:text-white leading-snug">
-                  Bachelor of Technology in Multimedia and Web Technology
-                </h4>
-                <div className="text-sm font-medium text-brand-600 dark:text-brand-400">
-                  University of Vocational Technology (UoVT)
-                </div>
+              <h3 className="mt-3 text-lg font-semibold text-slate-900 dark:text-white leading-snug">
+                Bachelor of Technology in Multimedia and Web Technology
+              </h3>
 
-                <div className="flex flex-wrap items-center gap-4 text-xs text-slate-500 dark:text-slate-400 pt-1">
-                  <span className="flex items-center gap-1">
-                    <MapPin className="w-3.5 h-3.5" /> Sri Lanka
-                  </span>
-                  <span className="flex items-center gap-1 font-mono">
-                    <Calendar className="w-3.5 h-3.5" /> 2024 – Present
-                  </span>
-                </div>
-              </div>
+              <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">
+                University of Vocational Technology (UoVT)
+              </p>
+              <p className="mt-1 text-sm text-slate-500 dark:text-slate-500">
+                Sri Lanka · 2024 – Present
+              </p>
 
-              <div className="pt-4 border-t border-slate-200 dark:border-slate-800 space-y-2">
-                <span className="text-xs font-mono text-slate-500 dark:text-slate-400 flex items-center gap-1">
-                  <BookOpen className="w-3.5 h-3.5" /> Relevant Study Areas:
-                </span>
-                <div className="flex flex-wrap gap-1.5 pt-1">
+              <div className="mt-6">
+                <p className="text-xs font-medium text-slate-500 dark:text-slate-400">
+                  Relevant study areas
+                </p>
+                <ul className="mt-2.5 space-y-1.5 text-sm text-slate-600 dark:text-slate-300">
                   {educationAreas.map((area) => (
-                    <span
-                      key={area}
-                      className="text-xs font-mono px-2.5 py-1 rounded bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700"
-                    >
-                      {area}
-                    </span>
+                    <li key={area} className="flex gap-2">
+                      <span className="text-slate-300 dark:text-slate-600 select-none" aria-hidden>
+                        ·
+                      </span>
+                      <span>{area}</span>
+                    </li>
                   ))}
-                </div>
+                </ul>
               </div>
-            </div>
+            </article>
           </div>
 
         </div>

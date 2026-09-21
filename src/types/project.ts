@@ -134,6 +134,7 @@ export interface Project {
   heroImage: string;
   featured: boolean;
   status: ProjectStatus;
+  behanceUrl?: string;
   type: string; // e.g. "Personal Project", "Personal Concept Project"
   caseStudy?: CaseStudyData;
 }

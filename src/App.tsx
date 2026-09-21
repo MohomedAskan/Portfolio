@@ -42,17 +42,16 @@ export function App() {
 
         <main className="flex-grow">
           <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/stack" element={<StackPage />} />
-            <Route path="/services" element={<ServicesPage />} />
-            <Route path="/work" element={<WorkPage />} />
-            <Route path="/work/:slug" element={<CaseStudyPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-            {/* Legacy redirects */}
-            <Route path="/skills" element={<StackPage />} />
-            <Route path="*" element={<NotFoundPage />} />
-          </Routes>
+  <Route path="/" element={<HomePage />} />
+  <Route path="/about" element={<AboutPage />} />
+  <Route path="/stack" element={<StackPage />} />
+  <Route path="/services" element={<ServicesPage />} />
+  <Route path="/work" element={<WorkPage />} />
+  <Route path="/contact" element={<ContactPage />} />
+  {/* Legacy redirects */}
+  <Route path="/skills" element={<StackPage />} />
+  <Route path="*" element={<NotFoundPage />} />
+</Routes>
         </main>
 
         <Footer />

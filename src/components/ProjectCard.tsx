@@ -130,7 +130,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
     </div>
   );
 
-  if (isComingSoon) {
+if (isComingSoon) {
     return (
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -150,9 +150,14 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
     >
-      <Link to={`/work/${project.slug}`} className="block h-full">
+      <a
+        href={project.behanceUrl || '#'}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block h-full cursor-pointer"
+      >
         {cardContent}
-      </Link>
+      </a>
     </motion.div>
   );
 }

@@ -1,25 +1,6 @@
 import type { Project } from '../types/project';
 
-/**
- * ============================================================================
- * CENTRALIZED PROJECT MANAGEMENT SYSTEM
- * ============================================================================
- * 
- * HOW TO ADD A NEW PROJECT:
- * 1. Open this file (src/data/projects.ts).
- * 2. Copy one of the project objects below.
- * 3. Fill in your project details (slug, title, category, description, caseStudy, etc.).
- * 4. Save the file.
- * 
- * The website will automatically update:
- * - Homepage "Selected Work" grid
- * - Work page filterable list (/work)
- * - Dynamic case study page (/work/:slug)
- * - Next / Previous project case study navigation
- * 
- * No component modifications required!
- * ============================================================================
- */
+
 
 export const PROJECTS: Project[] = [
   {
@@ -40,7 +21,13 @@ export const PROJECTS: Project[] = [
     status: 'completed',
     thumbnail: '/assets/projects/holidays/thumbnail.svg',
     heroImage: '/assets/projects/holidays/hero.svg',
+    status: 'completed',
+    thumbnail: '/assets/projects/holidays/thumbnail.svg',
+    heroImage: '/assets/projects/holidays/hero.svg',
+    behanceUrl: 'https://www.behance.net/gallery/252092525/Hotel-Booking-App', // <--- INSERT THIS LINE ONLY
     caseStudy: {
+      overview: 'Holidays is a mobile accommodation discovery...',
+      // Leave all existing caseStudy code untouched below this line!
       overview: 'Holidays is a mobile accommodation discovery and booking concept designed to simplify how travelers search, evaluate, and reserve stays. By reducing decision fatigue and visual clutter, the app provides a smooth end-to-end booking flow.',
       problem: 'Travelers often face overwhelming information, complex filter menus, and ambiguous pricing breakdowns during mobile hotel bookings, leading to cart abandonment and anxiety before reservation.',
       goals: [
@@ -193,6 +180,9 @@ export const PROJECTS: Project[] = [
     status: 'completed',
     thumbnail: '/assets/projects/pickme/thumbnail.svg',
     heroImage: '/assets/projects/pickme/hero.svg',
+    humbnail: '/assets/projects/pickme/thumbnail.svg',
+    heroImage: '/assets/projects/pickme/hero.svg',
+    behanceUrl: 'https://www.behance.net/gallery/254062393/PickMe-App-Redesign-UX-Case-Study',
     caseStudy: {
       overview: 'A personal conceptual redesign project examining the core ride-hailing user flow. This project focuses on simplifying location selection, fare transparency, vehicle type comparison, and real-time ride tracking.',
       disclaimer: 'Conceptual UX/UI redesign — personal project. Created for portfolio evaluation. Not affiliated with or endorsed by PickMe. No access to internal company data was used; analysis is strictly based on personal usability observations and desk research.',
