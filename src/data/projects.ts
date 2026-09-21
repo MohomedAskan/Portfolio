@@ -18,15 +18,15 @@ export const PROJECTS: Project[] = [
     tags: ['UX Design', 'User Flow', 'Wireframing', 'UI Design', 'Prototyping', 'Mobile Design'],
     type: 'Personal Project',
     featured: true,
-    status: 'completed',
-    thumbnail: '/assets/projects/holidays/thumbnail.svg',
-    heroImage: '/assets/projects/holidays/hero.svg',
+    //status: 'completed',
+    //thumbnail: '/assets/projects/holidays/thumbnail.svg',
+    //heroImage: '/assets/projects/holidays/hero.svg',
     status: 'completed',
     thumbnail: '/assets/projects/holidays/thumbnail.svg',
     heroImage: '/assets/projects/holidays/hero.svg',
     behanceUrl: 'https://www.behance.net/gallery/252092525/Hotel-Booking-App', // <--- INSERT THIS LINE ONLY
     caseStudy: {
-      overview: 'Holidays is a mobile accommodation discovery...',
+      //overview: 'Holidays is a mobile accommodation discovery...',
       // Leave all existing caseStudy code untouched below this line!
       overview: 'Holidays is a mobile accommodation discovery and booking concept designed to simplify how travelers search, evaluate, and reserve stays. By reducing decision fatigue and visual clutter, the app provides a smooth end-to-end booking flow.',
       problem: 'Travelers often face overwhelming information, complex filter menus, and ambiguous pricing breakdowns during mobile hotel bookings, leading to cart abandonment and anxiety before reservation.',
@@ -180,9 +180,7 @@ export const PROJECTS: Project[] = [
     status: 'completed',
     thumbnail: '/assets/projects/pickme/thumbnail.svg',
     heroImage: '/assets/projects/pickme/hero.svg',
-    humbnail: '/assets/projects/pickme/thumbnail.svg',
-    heroImage: '/assets/projects/pickme/hero.svg',
-    behanceUrl: 'https://www.behance.net/gallery/254062393/PickMe-App-Redesign-UX-Case-Study',
+    
     caseStudy: {
       overview: 'A personal conceptual redesign project examining the core ride-hailing user flow. This project focuses on simplifying location selection, fare transparency, vehicle type comparison, and real-time ride tracking.',
       disclaimer: 'Conceptual UX/UI redesign — personal project. Created for portfolio evaluation. Not affiliated with or endorsed by PickMe. No access to internal company data was used; analysis is strictly based on personal usability observations and desk research.',
