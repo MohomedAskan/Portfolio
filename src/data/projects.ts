@@ -22,7 +22,7 @@ export const PROJECTS: Project[] = [
     //thumbnail: '/assets/projects/holidays/thumbnail.svg',
     //heroImage: '/assets/projects/holidays/hero.svg',
     status: 'completed',
-    thumbnail: '/assets/projects/holidays/thumbnail.svg',
+    thumbnail: '/assets/projects/holidays/thumbnail.png',
     heroImage: '/assets/projects/holidays/hero.svg',
     behanceUrl: 'https://www.behance.net/gallery/252092525/Hotel-Booking-App', // <--- INSERT THIS LINE ONLY
     caseStudy: {
@@ -178,7 +178,7 @@ export const PROJECTS: Project[] = [
     type: 'Personal Concept Project',
     featured: true,
     status: 'completed',
-    thumbnail: '/assets/projects/pickme/thumbnail.svg',
+    thumbnail: '/assets/projects/pickme/thumbnail.png',
     heroImage: '/assets/projects/pickme/hero.svg',
     behanceUrl: 'https://www.behance.net/gallery/254062393/PickMe-App-Redesign-UX-Case-Study',
     caseStudy: {
