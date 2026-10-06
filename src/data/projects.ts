@@ -316,44 +316,7 @@ export const PROJECTS: Project[] = [
       }
     }
   },
-  {
-    id: 'emergency-response-platform',
-    slug: 'emergency-response',
-    title: 'Emergency Response Platform',
-    category: 'Product Design Concept',
-    filterCategory: ['Product Design', 'Concept', 'Mobile'],
-    description: 'A concept exploring how digital services could help users request emergency assistance quickly and clearly.',
-    year: '2025',
-    role: 'Product Designer (Concept)',
-    timeline: 'In Progress',
-    platform: 'Mobile & Web',
-    tools: ['Figma', 'Accessibility Research'],
-    tags: ['Product Design', 'Emergency UX', 'Accessibility', 'Concept'],
-    type: 'Personal Concept Project',
-    featured: false,
-    status: 'coming-soon',
-    thumbnail: '/assets/projects/emergency-response/thumbnail.svg',
-    heroImage: '/assets/projects/emergency-response/hero.svg'
-  },
-  {
-    id: 'salon-appointment-experience',
-    slug: 'salon-appointment',
-    title: 'Salon Appointment Experience',
-    category: 'UX/UI Design',
-    filterCategory: ['UX/UI', 'Mobile', 'Web'],
-    description: 'A booking experience focused on simplifying service discovery, professional selection, and appointment scheduling.',
-    year: '2025',
-    role: 'UX/UI Designer (Concept)',
-    timeline: 'In Progress',
-    platform: 'Mobile App',
-    tools: ['Figma'],
-    tags: ['Service Design', 'Mobile UX', 'Booking System', 'UI Design'],
-    type: 'Personal Project',
-    featured: false,
-    status: 'coming-soon',
-    thumbnail: '/assets/projects/salon/thumbnail.svg',
-    heroImage: '/assets/projects/salon/hero.svg'
-  }
+
 ];
 
 // Helper functions for easy project queries across the website
