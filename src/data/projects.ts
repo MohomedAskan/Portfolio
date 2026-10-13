@@ -316,6 +316,25 @@ export const PROJECTS: Project[] = [
       }
     }
   },
+  {
+    id: 'fixora-home-services',
+    slug: 'fixora',
+    title: 'Fixora',
+    category: 'Mobile UX/UI Design',
+    filterCategory: ['UX/UI', 'Mobile'],
+    description: 'A home services booking app that simplifies finding and booking trusted professionals for plumbing, electrical, HVAC, and other household needs.',
+    year: '2025',
+    role: 'Sole UX/UI Designer (Concept)',
+    timeline: '4 Weeks',
+    platform: 'Mobile (iOS / Android)',
+    tools: ['Figma'],
+    tags: ['UX Design', 'Mobile Design', 'Service Booking', 'UI Design', 'Prototyping'],
+    type: 'Personal Project',
+    featured: true,
+    status: 'completed',
+    thumbnail: '/assets/projects/fixora/thumbnail.png',
+    heroImage: '/assets/projects/fixora/thumbnail.png',
+  },
 
 ];
 
