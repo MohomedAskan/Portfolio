@@ -1,167 +1,29 @@
 import type { Project } from '../types/project';
 
-
-
 export const PROJECTS: Project[] = [
+  // 01 — Fixora
   {
-    id: 'holidays-booking-app',
-    slug: 'holidays',
-    title: 'Holidays',
+    id: 'fixora-home-services',
+    slug: 'fixora',
+    title: 'Fixora',
     category: 'Mobile UX/UI Design',
     filterCategory: ['UX/UI', 'Mobile'],
-    description: 'A hotel booking app concept focused on making accommodation discovery, selection, and booking more intuitive.',
+    description: 'A home services booking app that simplifies finding and booking trusted professionals for plumbing, electrical, HVAC, and other household needs.',
     year: '2025',
     role: 'Sole UX/UI Designer (Concept)',
-    timeline: '3 Weeks',
+    timeline: '4 Weeks',
     platform: 'Mobile (iOS / Android)',
-    tools: ['Figma', 'Framer', 'Plugins'],
-    tags: ['UX Design', 'User Flow', 'Wireframing', 'UI Design', 'Prototyping', 'Mobile Design'],
+    tools: ['Figma'],
+    tags: ['UX Design', 'Mobile Design', 'Service Booking', 'UI Design', 'Prototyping'],
     type: 'Personal Project',
     featured: true,
-    //status: 'completed',
-    //thumbnail: '/assets/projects/holidays/thumbnail.svg',
-    //heroImage: '/assets/projects/holidays/hero.svg',
     status: 'completed',
-    thumbnail: '/assets/projects/holidays/thumbnail.png',
-    heroImage: '/assets/projects/holidays/hero.svg',
-    behanceUrl: 'https://www.behance.net/gallery/252092525/Hotel-Booking-App', // <--- INSERT THIS LINE ONLY
-    caseStudy: {
-      //overview: 'Holidays is a mobile accommodation discovery...',
-      // Leave all existing caseStudy code untouched below this line!
-      overview: 'Holidays is a mobile accommodation discovery and booking concept designed to simplify how travelers search, evaluate, and reserve stays. By reducing decision fatigue and visual clutter, the app provides a smooth end-to-end booking flow.',
-      problem: 'Travelers often face overwhelming information, complex filter menus, and ambiguous pricing breakdowns during mobile hotel bookings, leading to cart abandonment and anxiety before reservation.',
-      goals: [
-        'Streamline search filters to help users find suitable stays in under 3 steps.',
-        'Improve visual hierarchy on hotel detail pages to highlight key amenities and transparent pricing.',
-        'Create a friction-free 2-step checkout flow with instant booking confirmation.',
-        'Establish a consistent, modern design system optimized for mobile touch targets.'
-      ],
-      research: {
-        type: 'Desk Research & Competitive Analysis',
-        overview: 'Analyzed existing booking platforms to identify common user friction points in mobile navigation and filter design.',
-        keyInsights: [
-          'Desk analysis revealed that users struggle when filters hide key parameters like free cancellation or breakfast.',
-          'Price transparency before checkout builds user trust and reduces bounce rates.',
-          'High-quality visual preview carousels significantly influence accommodation confidence.'
-        ]
-      },
-      assumptions: [
-        'Users prioritize location proximity and real user ratings over decorative badges.',
-        'A single clear CTA per screen speeds up reservation completion.'
-      ],
-      persona: {
-        isConceptual: true,
-        title: 'Conceptual User Persona',
-        name: 'Alex Tan — Frequent Leisure Traveler',
-        roleQuote: 'Wants fast, transparent hotel recommendations without clutter.',
-        quote: 'I just want to see the real total price and clean photos without 10 pop-ups urging me to buy now.',
-        painPoints: [
-          'Hidden fees revealed only at final checkout step.',
-          'Cluttered filters that require scrolling through irrelevant options.',
-          'Inconsistent amenity icons across property listings.'
-        ],
-        goalsNeeds: [
-          'Clear total pricing breakdown from the search results stage.',
-          'One-tap filter chips for essential amenities.',
-          'Saved wishlist synced across search sessions.'
-        ]
-      },
-      informationArchitecture: {
-        description: 'Structured around 4 primary mobile tabs: Explore, Saved Wishlist, Active Bookings, and User Profile.',
-        nodes: [
-          { title: 'Home / Explore', subtitle: 'Search bar, popular destinations, deals' },
-          { title: 'Search Results', subtitle: 'Filter bar, map toggle, list view' },
-          { title: 'Property Detail', subtitle: 'Gallery, amenities, reviews, room select' },
-          { title: 'Checkout & Confirmation', subtitle: 'Guest info, payment, digital pass' }
-        ]
-      },
-      userFlow: {
-        description: 'Primary booking pathway from landing to instant booking confirmation.',
-        steps: [
-          { stepNumber: '01', title: 'Search & Filter', detail: 'User enters destination and date range with intuitive calendar picker.' },
-          { stepNumber: '02', title: 'Evaluate Stays', detail: 'Filters by rating, price range, and cancellation policy.' },
-          { stepNumber: '03', title: 'Room Selection', detail: 'Compares room tiers with clear amenity checklists.' },
-          { stepNumber: '04', title: 'Express Checkout', detail: 'Reviews total transparent price and completes reservation.' }
-        ]
-      },
-      wireframes: {
-        description: 'Low-fidelity exploratory layouts testing navigation patterns and content spacing before visual styling.',
-        items: [
-          { title: 'Exploratory Search Bar', description: 'Testing sticky vs embedded search controls on home screen.', tag: 'Wireframe 01' },
-          { title: 'Filter Bottom Sheet', description: 'Quick-access filter drawer with live counter of matching stays.', tag: 'Wireframe 02' },
-          { title: 'Property Overview Layout', description: 'Hero image slider with collapsible amenity categories.', tag: 'Wireframe 03' }
-        ]
-      },
-      designSystem: {
-        typography: [
-          { role: 'Headline Display', font: 'Plus Jakarta Sans Bold', size: '28px - 34px', usage: 'Screen titles & property headings' },
-          { role: 'Body Text', font: 'Plus Jakarta Sans Regular', size: '14px - 16px', usage: 'Descriptions, reviews, and specs' },
-          { role: 'Caption / Badge', font: 'Space Mono / Sans Medium', size: '11px - 13px', usage: 'Tags, price badges, timestamps' }
-        ],
-        colors: [
-          { name: 'Primary Ocean', hex: '#2563EB', role: 'Main active elements, primary CTA buttons' },
-          { name: 'Deep Slate', hex: '#0F172A', role: 'Primary titles and dark mode background' },
-          { name: 'Emerald Trust', hex: '#10B981', role: 'Availability tags & positive indicators' },
-          { name: 'Warm Surface', hex: '#F8FAFC', role: 'Card backgrounds and container subtle fills' }
-        ],
-        components: ['Primary Pill Buttons', 'Filter Chips', 'Rating Badge', 'Property Card', 'Bottom Navigation Bar', 'Price Summary Drawer']
-      },
-      finalScreens: [
-        {
-          sectionTitle: 'Core Mobile Screen Showcase',
-          description: 'High-fidelity mobile screens designed for clarity, high contrast, and effortless thumb reachability.',
-          layout: 'mobile-grid',
-          screens: [
-            { title: 'Discovery & Home', caption: 'Clean search input with curated location cards.', imagePlaceholderTitle: 'Figma Screen Placeholder — Home & Search' },
-            { title: 'Search Results & Filter', caption: 'Interactive filter bar with live price feedback.', imagePlaceholderTitle: 'Figma Screen Placeholder — Hotel List & Map View' },
-            { title: 'Property Detail View', caption: 'Rich photo carousels and room tier comparisons.', imagePlaceholderTitle: 'Figma Screen Placeholder — Room Detail Page' },
-            { title: '2-Step Mobile Checkout', caption: 'Transparent fee breakdown with instant Apple Pay / Card checkout.', imagePlaceholderTitle: 'Figma Screen Placeholder — Booking Summary & Confirmation' }
-          ]
-        }
-      ],
-      responsiveDesign: {
-        description: 'Optimized primarily for iOS & Android mobile viewports (375px to 430px width) with touch-friendly 48px minimum target areas.',
-        breakpoints: [
-          { device: 'Mobile Compact (375px)', behavior: 'Single column stacked layout, bottom tab bar navigation.' },
-          { device: 'Mobile Pro Max (430px)', behavior: 'Expanded card padding, multi-column filter chips.' },
-          { device: 'Tablet (768px+)', behavior: 'Split-view map and list layout.' }
-        ]
-      },
-      prototype: {
-        description: 'Interactive Figma prototype demonstrating transition animations between search results and checkout.',
-        embedTitle: 'Figma Interactive Prototype Placeholder'
-      },
-      designDecisions: [
-        {
-          decision: 'Bottom sheet filter drawer instead of separate page transition.',
-          reason: 'Keeps user context intact on search results without resetting scroll position.',
-          uxImpact: 'Reduces time to apply filters by 40% in initial usability walk-throughs.'
-        },
-        {
-          decision: 'Explicit total price breakdown card visible before final button tap.',
-          reason: 'Prevents surprise taxes or resort fees at the last step.',
-          uxImpact: 'Eliminates unexpected price jumps and builds user trust.'
-        }
-      ],
-      challenges: [
-        {
-          challenge: 'Fitting dense property information (rating, location, amenities, price, policy) into a compact mobile card without visual clutter.',
-          solution: 'Utilized progressive disclosure: essential badges (rating, price, distance) on card preview, detailed breakdowns inside property screen.'
-        }
-      ],
-      outcome: {
-        created: ['Full mobile wireframes and high-fidelity screen set in Figma.', 'Reusable UI component library for hotel booking apps.', 'Structured user flow map for room booking.'],
-        improved: ['Simplified filter experience to 3 essential quick-chips.', 'Enhanced visual hierarchy for pricing transparency.'],
-        learned: ['Deepened understanding of mobile touch targets and accessibility guidelines.', 'Practiced mobile component modularity in Figma.'],
-        nextSteps: ['Conduct formal usability testing with mobile users.', 'Explore dark mode color system variations.']
-      },
-      reflection: {
-        learned: 'Designing a mobile booking flow taught me that clarity always beats decorative elements when users are attempting to complete a transactional task.',
-        improvement: 'In a future iteration, I would refine the map toggle transition and test alternative calendar date range picker controls.',
-        nextSteps: 'Create dynamic micro-interaction prototypes for booking micro-animations using Framer Motion.'
-      }
-    }
+    thumbnail: '/assets/projects/fixora/thumbnail.png',
+    heroImage: '/assets/projects/fixora/thumbnail.png',
+    behanceUrl: 'https://dribbble.com/shots/27806204-Fixora-Home-Services-App',
   },
+
+  // 02 — PickMe Redesign
   {
     id: 'pickme-redesign',
     slug: 'pickme-redesign',
@@ -316,24 +178,161 @@ export const PROJECTS: Project[] = [
       }
     }
   },
+
+  // 03 — Holidays
   {
-    id: 'fixora-home-services',
-    slug: 'fixora',
-    title: 'Fixora',
+    id: 'holidays-booking-app',
+    slug: 'holidays',
+    title: 'Holidays',
     category: 'Mobile UX/UI Design',
     filterCategory: ['UX/UI', 'Mobile'],
-    description: 'A home services booking app that simplifies finding and booking trusted professionals for plumbing, electrical, HVAC, and other household needs.',
+    description: 'A hotel booking app concept focused on making accommodation discovery, selection, and booking more intuitive.',
     year: '2025',
     role: 'Sole UX/UI Designer (Concept)',
-    timeline: '4 Weeks',
+    timeline: '3 Weeks',
     platform: 'Mobile (iOS / Android)',
-    tools: ['Figma'],
-    tags: ['UX Design', 'Mobile Design', 'Service Booking', 'UI Design', 'Prototyping'],
+    tools: ['Figma', 'Framer', 'Plugins'],
+    tags: ['UX Design', 'User Flow', 'Wireframing', 'UI Design', 'Prototyping', 'Mobile Design'],
     type: 'Personal Project',
     featured: true,
     status: 'completed',
-    thumbnail: '/assets/projects/fixora/thumbnail.png',
-    heroImage: '/assets/projects/fixora/thumbnail.png',
+    thumbnail: '/assets/projects/holidays/thumbnail.png',
+    heroImage: '/assets/projects/holidays/hero.svg',
+    behanceUrl: 'https://www.behance.net/gallery/252092525/Hotel-Booking-App',
+    caseStudy: {
+      overview: 'Holidays is a mobile accommodation discovery and booking concept designed to simplify how travelers search, evaluate, and reserve stays. By reducing decision fatigue and visual clutter, the app provides a smooth end-to-end booking flow.',
+      problem: 'Travelers often face overwhelming information, complex filter menus, and ambiguous pricing breakdowns during mobile hotel bookings, leading to cart abandonment and anxiety before reservation.',
+      goals: [
+        'Streamline search filters to help users find suitable stays in under 3 steps.',
+        'Improve visual hierarchy on hotel detail pages to highlight key amenities and transparent pricing.',
+        'Create a friction-free 2-step checkout flow with instant booking confirmation.',
+        'Establish a consistent, modern design system optimized for mobile touch targets.'
+      ],
+      research: {
+        type: 'Desk Research & Competitive Analysis',
+        overview: 'Analyzed existing booking platforms to identify common user friction points in mobile navigation and filter design.',
+        keyInsights: [
+          'Desk analysis revealed that users struggle when filters hide key parameters like free cancellation or breakfast.',
+          'Price transparency before checkout builds user trust and reduces bounce rates.',
+          'High-quality visual preview carousels significantly influence accommodation confidence.'
+        ]
+      },
+      assumptions: [
+        'Users prioritize location proximity and real user ratings over decorative badges.',
+        'A single clear CTA per screen speeds up reservation completion.'
+      ],
+      persona: {
+        isConceptual: true,
+        title: 'Conceptual User Persona',
+        name: 'Alex Tan — Frequent Leisure Traveler',
+        roleQuote: 'Wants fast, transparent hotel recommendations without clutter.',
+        quote: 'I just want to see the real total price and clean photos without 10 pop-ups urging me to buy now.',
+        painPoints: [
+          'Hidden fees revealed only at final checkout step.',
+          'Cluttered filters that require scrolling through irrelevant options.',
+          'Inconsistent amenity icons across property listings.'
+        ],
+        goalsNeeds: [
+          'Clear total pricing breakdown from the search results stage.',
+          'One-tap filter chips for essential amenities.',
+          'Saved wishlist synced across search sessions.'
+        ]
+      },
+      informationArchitecture: {
+        description: 'Structured around 4 primary mobile tabs: Explore, Saved Wishlist, Active Bookings, and User Profile.',
+        nodes: [
+          { title: 'Home / Explore', subtitle: 'Search bar, popular destinations, deals' },
+          { title: 'Search Results', subtitle: 'Filter bar, map toggle, list view' },
+          { title: 'Property Detail', subtitle: 'Gallery, amenities, reviews, room select' },
+          { title: 'Checkout & Confirmation', subtitle: 'Guest info, payment, digital pass' }
+        ]
+      },
+      userFlow: {
+        description: 'Primary booking pathway from landing to instant booking confirmation.',
+        steps: [
+          { stepNumber: '01', title: 'Search & Filter', detail: 'User enters destination and date range with intuitive calendar picker.' },
+          { stepNumber: '02', title: 'Evaluate Stays', detail: 'Filters by rating, price range, and cancellation policy.' },
+          { stepNumber: '03', title: 'Room Selection', detail: 'Compares room tiers with clear amenity checklists.' },
+          { stepNumber: '04', title: 'Express Checkout', detail: 'Reviews total transparent price and completes reservation.' }
+        ]
+      },
+      wireframes: {
+        description: 'Low-fidelity exploratory layouts testing navigation patterns and content spacing before visual styling.',
+        items: [
+          { title: 'Exploratory Search Bar', description: 'Testing sticky vs embedded search controls on home screen.', tag: 'Wireframe 01' },
+          { title: 'Filter Bottom Sheet', description: 'Quick-access filter drawer with live counter of matching stays.', tag: 'Wireframe 02' },
+          { title: 'Property Overview Layout', description: 'Hero image slider with collapsible amenity categories.', tag: 'Wireframe 03' }
+        ]
+      },
+      designSystem: {
+        typography: [
+          { role: 'Headline Display', font: 'Plus Jakarta Sans Bold', size: '28px - 34px', usage: 'Screen titles & property headings' },
+          { role: 'Body Text', font: 'Plus Jakarta Sans Regular', size: '14px - 16px', usage: 'Descriptions, reviews, and specs' },
+          { role: 'Caption / Badge', font: 'Space Mono / Sans Medium', size: '11px - 13px', usage: 'Tags, price badges, timestamps' }
+        ],
+        colors: [
+          { name: 'Primary Ocean', hex: '#2563EB', role: 'Main active elements, primary CTA buttons' },
+          { name: 'Deep Slate', hex: '#0F172A', role: 'Primary titles and dark mode background' },
+          { name: 'Emerald Trust', hex: '#10B981', role: 'Availability tags & positive indicators' },
+          { name: 'Warm Surface', hex: '#F8FAFC', role: 'Card backgrounds and container subtle fills' }
+        ],
+        components: ['Primary Pill Buttons', 'Filter Chips', 'Rating Badge', 'Property Card', 'Bottom Navigation Bar', 'Price Summary Drawer']
+      },
+      finalScreens: [
+        {
+          sectionTitle: 'Core Mobile Screen Showcase',
+          description: 'High-fidelity mobile screens designed for clarity, high contrast, and effortless thumb reachability.',
+          layout: 'mobile-grid',
+          screens: [
+            { title: 'Discovery & Home', caption: 'Clean search input with curated location cards.', imagePlaceholderTitle: 'Figma Screen Placeholder — Home & Search' },
+            { title: 'Search Results & Filter', caption: 'Interactive filter bar with live price feedback.', imagePlaceholderTitle: 'Figma Screen Placeholder — Hotel List & Map View' },
+            { title: 'Property Detail View', caption: 'Rich photo carousels and room tier comparisons.', imagePlaceholderTitle: 'Figma Screen Placeholder — Room Detail Page' },
+            { title: '2-Step Mobile Checkout', caption: 'Transparent fee breakdown with instant Apple Pay / Card checkout.', imagePlaceholderTitle: 'Figma Screen Placeholder — Booking Summary & Confirmation' }
+          ]
+        }
+      ],
+      responsiveDesign: {
+        description: 'Optimized primarily for iOS & Android mobile viewports (375px to 430px width) with touch-friendly 48px minimum target areas.',
+        breakpoints: [
+          { device: 'Mobile Compact (375px)', behavior: 'Single column stacked layout, bottom tab bar navigation.' },
+          { device: 'Mobile Pro Max (430px)', behavior: 'Expanded card padding, multi-column filter chips.' },
+          { device: 'Tablet (768px+)', behavior: 'Split-view map and list layout.' }
+        ]
+      },
+      prototype: {
+        description: 'Interactive Figma prototype demonstrating transition animations between search results and checkout.',
+        embedTitle: 'Figma Interactive Prototype Placeholder'
+      },
+      designDecisions: [
+        {
+          decision: 'Bottom sheet filter drawer instead of separate page transition.',
+          reason: 'Keeps user context intact on search results without resetting scroll position.',
+          uxImpact: 'Reduces time to apply filters by 40% in initial usability walk-throughs.'
+        },
+        {
+          decision: 'Explicit total price breakdown card visible before final button tap.',
+          reason: 'Prevents surprise taxes or resort fees at the last step.',
+          uxImpact: 'Eliminates unexpected price jumps and builds user trust.'
+        }
+      ],
+      challenges: [
+        {
+          challenge: 'Fitting dense property information (rating, location, amenities, price, policy) into a compact mobile card without visual clutter.',
+          solution: 'Utilized progressive disclosure: essential badges (rating, price, distance) on card preview, detailed breakdowns inside property screen.'
+        }
+      ],
+      outcome: {
+        created: ['Full mobile wireframes and high-fidelity screen set in Figma.', 'Reusable UI component library for hotel booking apps.', 'Structured user flow map for room booking.'],
+        improved: ['Simplified filter experience to 3 essential quick-chips.', 'Enhanced visual hierarchy for pricing transparency.'],
+        learned: ['Deepened understanding of mobile touch targets and accessibility guidelines.', 'Practiced mobile component modularity in Figma.'],
+        nextSteps: ['Conduct formal usability testing with mobile users.', 'Explore dark mode color system variations.']
+      },
+      reflection: {
+        learned: 'Designing a mobile booking flow taught me that clarity always beats decorative elements when users are attempting to complete a transactional task.',
+        improvement: 'In a future iteration, I would refine the map toggle transition and test alternative calendar date range picker controls.',
+        nextSteps: 'Create dynamic micro-interaction prototypes for booking micro-animations using Framer Motion.'
+      }
+    }
   },
 
 ];
